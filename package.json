@@ -18,5 +18,9 @@
   "homepage": "https://github.com/SamMarch/10-Object-Oriented-Programming-Team-Profile-Generator#readme",
   "dependencies": {
     "inquirer": "^8.2.4"
-  }
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {}
 }
