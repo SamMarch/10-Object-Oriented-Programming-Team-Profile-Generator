@@ -9,6 +9,7 @@ const outputPath = path.join(OUTPUT_DIR, "team.html");
 const render = require("./lib/htmlRenderer");
 const employees = [];
 
+/* It asks the user a series of questions, and then based on the user's response, it asks the user additional questions. */
 async function askquestions() {
   const res = await inquirer.prompt([
     {
@@ -80,6 +81,7 @@ async function askquestions() {
 }
 askquestions();
 
+/* If the user wants to add another employee, then ask the questions again. Otherwise, build the team */
 async function addAnotherEmployee() {
   const addMoreEmployee = await inquirer.prompt([
     {
