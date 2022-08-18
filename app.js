@@ -91,8 +91,9 @@ async function addAnotherEmployee() {
     }
   ]);
   
-  addMoreEmployee.addAgain == true ? askquestions() : buildTeam(employees);
+  addMoreEmployee.addAgain == true ? askquestions() : buildTeam(employees);  
 }
+
 function buildTeam(employees) {
   if (!fs.existsSync(OUTPUT_DIR)) {
     fs.mkdirSync(OUTPUT_DIR);
